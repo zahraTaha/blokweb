@@ -117,9 +117,13 @@ li h2 {
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | mag ik class gebruiken als ik woorden OP een foto wil plaatsen, zo niet? Moet ik dan javascript gebruiken?  | en dit             | en ik dit    | en dan ik dat    |
-  |  | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  |  mag ik class gebruiken als ik woorden OP een foto wil plaatsen, zo niet? Moet ik dan javascript gebruiken?  | Moet je iconen als foto inzetten of namaken in css/java (logo ook)? | en ik dit    | en dan ik dat    |
+  | 
+Mn header heeft de randen niet gevuld hoe zorg ik ervoor dat de backgroundcolour daar helemaal gevuld is? | Hoe vul ik de hele pagina met de foto er zijn nu witte randen aan de zijkant?| nog een punt | dit wil ik zeker |
+  | 
+Hoe neem ik de rechhterhelft van 1 groto foto in plaats van de hele foto?            | Me font doet het niet op mijn text?               | ...          | ...              |
+  | ---            | Er zit teveel ruimte tussen de text en foto hoe krijg je dat minder?                | ---          | ---              |
+
 
 
   ### Verslag van meeting
