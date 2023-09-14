@@ -38,6 +38,13 @@
 
 /* jouw code */
 
+li{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
 nav ul {
 	display: flex;
 	gap: 3em;
@@ -54,6 +61,8 @@ nav li a {
 nav li {
 	display: flex;
 	flex-shrink: 0;
+font-size: 20px;
+font-weight: 700;
 
 }
 
@@ -64,7 +73,7 @@ h1 {
 }
 
 
-ul {
+ul:nth-child(2) {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -76,7 +85,7 @@ li img {
 	height: 100%;
 	display: flex;
 	max-width: 100%;
-	margin-top: 4em;
+	margin-top: 3em;
 	
 }
 
@@ -84,6 +93,8 @@ li h2 {
 	font-weight: 900;
 	font-family: fontNormaal;
 	text-transform: uppercase;
+	margin-top: 1em;
+
 }
 
 footer{

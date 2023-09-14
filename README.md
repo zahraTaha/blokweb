@@ -92,14 +92,33 @@ en je gaat door de foto's heen zegt die telkens de naam van het shirt erbij. Als
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Het begin voor mijn website ging nog wel goed. Ik begon met de scrollende navigatiebar, dit ging goed omdat we dit tijdens de 
+opdracht in de les al hadden geleerd dus wist ik wat ik moest doen.
+<img src="readme-images/scrollendeNav.jpg" width="375px" alt="ging goed">
+
+Het zetten van de foto's ging goed maar er blijft wel een randje aan de buitenkanten steeds wat niet hoort. Het instellen van de 
+font ging ook niet echt goed want ik begreep niet waarom het niet op de text kwam.
+<img src="readme-images/moeilijk.jpg" width="375px" alt="ging goed">
+
+@font-face {
+	font-family: fontNormaal;
+	src: url(Helvetica_Neue_Black.woff2);
+}
+
+li h2 {
+	font-weight: 900;
+	font-family: fontNormaal;
+	text-transform: uppercase;
+}
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | mag ik class gebruiken als ik woorden OP een foto wil plaatsen, zo niet? Moet ik dan javascript gebruiken?  | en dit             | en ik dit    | en dan ik dat    |
+  |  | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
