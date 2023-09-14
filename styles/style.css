@@ -1,8 +1,17 @@
+@font-face {
+	font-family: fontNormaal;
+	src: url(Helvetica_Neue_Black.woff2);
+}
+
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,8 +24,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
 
 
@@ -29,3 +38,60 @@
 
 /* jouw code */
 
+nav ul {
+	display: flex;
+	gap: 3em;
+	overflow-x: auto;
+
+}
+
+nav li a {
+	color: gray;
+	text-decoration: none;
+
+}
+
+nav li {
+	display: flex;
+	flex-shrink: 0;
+
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+
+
+li img {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	max-width: 100%;
+	margin-top: 4em;
+	
+}
+
+li h2 {
+	font-weight: 900;
+	font-family: fontNormaal;
+	text-transform: uppercase;
+}
+
+footer{
+background-color: black;
+height: 30em;
+}
+
+footer h2{
+	color: white;
+	
+}

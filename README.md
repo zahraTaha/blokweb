@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Koopscherm van een shirt
-  <img src="readme-images/pag2.jpeg" width="375px" alt="pagina voor kopen van shirt">
+  <img src="readme-images/pagina2.jpg" width="375px" alt="pagina voor kopen van shirt">
  
 </details>
 
@@ -58,6 +58,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+Bij de iconen krijg je niet gelijk te weten wat ze zijn je moet dan paar keer doorklikken wat erg onhandig is. Als je bij de aankooppagina bent
+en je gaat door de foto's heen zegt die telkens de naam van het shirt erbij. Als die de prijs noemt gaat die niet goed verder naar de maten dit is erg onhandig. Bij de woorden in de navigatie zegt hij het soms spellend wat best onduidelijk is.
 </details>
 
 
@@ -68,13 +70,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/helePagina.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/filter.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
