@@ -70,7 +70,7 @@ en je gaat door de foto's heen zegt die telkens de naam van het shirt erbij. Als
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/helePagina.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/helepagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
