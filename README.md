@@ -135,10 +135,10 @@ student 2:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - h2, p en img moeten op deze volgorde en dan fixen met css als nodig is
+  - foto gebruiken voor icoon is goed 
+  - svg gebruiken kan ook
+ 
 
 </details>
 
@@ -152,7 +152,8 @@ student 2:
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het maken van een hamburgermenu is nog best moeilijk en nog niet helemaal gelukt.
+  De responsiveness lukt al een beetje met als ik de site groter maak meerdere foto's naast elkaar komen.
 
 
   ### Agenda voor meeting
@@ -164,6 +165,17 @@ student 2:
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+student 1:
+- Wat doet aria label 
+- H1 komt na p mag dat
+- De backgroundcolour van mn header doet het op de hele pagina, hoe fix ik dit
+- qua grootte zijn mn h'tjes en p'tjes juist andersom dus het ziet er raar uit, moet ik dat met css fixen of mag ik het ook in html aanpassen
+
+student 2:
+- tekst onder foto, staan nu bij zijkant maar moet er onder
+- Ik wil maar 4 colommen als ik site vergroot hoe doe ik dat
+- Hoe stop ik de woorden in menu knop
+- Als ik site groter maak moet er tekst bij komen in de footer
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
