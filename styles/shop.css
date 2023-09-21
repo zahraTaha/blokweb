@@ -1,0 +1,57 @@
+:root {
+    --color-text: #111;
+    --color-background: #eee;
+    --color-wittekst: white;
+    --color-donkerGrijs: #3A3A3A;
+    --color-headerTekst: grey;
+    --color-footer: black;
+}
+
+
+
+section img {
+    height: 15em;
+    width: 12em;
+    display: flex;
+    order: 1;
+}
+
+section ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    column-gap: 2em;
+    grid-gap: 1em;
+
+}
+
+section li {
+    align-items: center;
+    display: flex;
+
+}
+
+section h2 {
+    font-family: fontRoman;
+    font-weight: 400;
+    font-size: 100%;
+    display: flex;
+    order: 2;
+}
+
+section p {
+    font-family: fontRoman;
+    font-weight: 400;
+    font-size: 100%;
+    display: flex;
+    order: 3;
+}
+
+@media (min-width:60em) {
+
+    section img {
+        width: 15em;
+        height: 20em;
+    }
+
+
+}
