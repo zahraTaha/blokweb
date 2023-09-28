@@ -199,6 +199,9 @@ student 2:
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+Alt teksten kunnen wat specifieker zijn dan ik nu heb, zodat gebruikers die het nodig hebben het beter kunnen gebruiken.
+De screenreader leest de site best goed. 
+
 </details>
 
 
@@ -223,9 +226,21 @@ student 2:
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+student 1:
+- Hoe zet ik mn logo links en groter zonder mn menu te verpesten. 
+- Mn screenreader leest de normale tekst niet. Dus buttons wel maar p niet. 
+- Mn slider heeft meerdere fotos die bijna identiek zijn mag ik 1 foto gebruiken voor alles. 
+- Mn tweede pagina gaat mis wnr ik het scherm groter maak. De main sections blijven op telefoon formaat
+
+student 2:
+- Bij footer section p hoort als site kleiner is niet te zien zijn maar dat gebeurt niet alleen als static weg is maar dan te groot,
+- Menu button wil niet boven komen, 
+- Header iconen willen niet uit elkaar,
+- Hoe hover ik over img dat er dan een andere komt
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+
 
   - punt 1
   - punt 2
