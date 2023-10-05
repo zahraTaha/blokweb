@@ -184,7 +184,7 @@ student 2:
 - als je iets niet wil zien maar wel in screenreader gebruik left tot je niet meer ziet
 - voor heading kan je ook aria-label en img gebruiken
 - flex-wrap gebruiken om naar andere kant te sturen als te lang
-- 
+- Grid gerbuiken om de footer te verdelen
 
 
 </details>
@@ -262,14 +262,15 @@ student 3:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/pagina1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/pagina2vol.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
  Ik heb geleerd hoe ik een site responsive moet maken en hoe ik een hamburgermenu kan maken die animeert.
 
   <img src="./readme-images/menuNormaal.png" width="375px" alt="top">
-    <img src="./readme-images/menuVergroot.png" width="375px" alt="top">
+  <img src="./readme-images/menuVergroot.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -278,7 +279,7 @@ student 3:
   goed te positioneren en ook als de site groter of kleiner word ging erg moeilijk en ben daar nogsteeds met het resultaat niet heel blij mee.
 
   <img src="./readme-images/lookbookMoeilijk.png" width="375px" alt="bummer">
-   <img src="./readme-images/headerMoeilijk.png" width="375px" alt="bummer">
+  <img src="./readme-images/headerMoeilijk.png" width="375px" alt="bummer">
 </details>
 
 
