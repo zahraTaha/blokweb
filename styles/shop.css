@@ -1,61 +1,282 @@
- main section:nth-of-type(1) img {
-     height: 15em;
-     width: 12em;
-     display: flex;
-     order: 1;
- }
+h1 {
+    position: relative;
+    left: -9000em;
+}
+
+main section:first-of-type h2 button {
+    display: flex;
+    justify-content: center;
+    font-family: fontBold;
+    text-transform: uppercase;
+    font-size: 1em;
+    position: relative;
+    top: 1.5em;
+    right: 3em;
+}
+
+main section:first-of-type h2 img {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    z-index: 100;
+    top: .1em;
+}
+
+main section:first-of-type h3 img {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    z-index: 100;
+}
+
+main section:first-of-type h3 button {
+    display: flex;
+    justify-content: center;
+    font-family: fontBold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    height: 1.5em;
+    align-items: center;
+    position: relative;
+    top: 1.6em;
+
+}
+
+h4 button {
+    display: none;
+}
+
+main section:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 
- section:nth-of-type(1) ul {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     margin-top: 2em;
-     align-items: center;
+}
 
- }
+main section:nth-of-type(2) img {
+    height: 15em;
+    width: 12em;
+    display: flex;
+}
 
- section:nth-of-type(1) li {
-     display: flex;
-     flex-direction: column;
-     margin: 1em;
+main section:nth-of-type(2) li:first-of-type img:first-of-type {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
 
- }
+main section:nth-of-type(2) li:first-of-type:hover img:nth-of-type(1) {
+    z-index: -1;
 
- section:nth-of-type(1) h2 {
-     font-family: fontRoman;
-     font-weight: 400;
-     font-size: 1em;
-     display: flex;
-     order: 2;
-     margin: 2em;
+}
 
- }
+main section:nth-of-type(2) li:nth-of-type(2) img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
 
- main section:nth-of-type(1) p {
-     font-family: fontRoman;
-     font-weight: 900;
-     font-size: 100%;
-     display: flex;
-     order: 3;
-     justify-content: start;
-     margin-left: 2em;
-
- }
+main section:nth-of-type(2) li:nth-of-type(2):hover img:nth-of-type(2) {
+    z-index: -1;
+}
 
 
+main section:nth-of-type(2) li:nth-child(3) img:nth-child(4) {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
+
+main section:nth-of-type(2) li:nth-child(3):hover img:nth-child(4) {
+    z-index: -1;
+}
+
+main section:nth-of-type(2) li:nth-child(4) img:nth-child(4) {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
+
+main section:nth-of-type(2) li:nth-child(4):hover img:nth-child(4) {
+    z-index: -1;
+}
+
+main section:nth-of-type(2) li:nth-child(5) img:nth-child(4) {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
+
+main section:nth-of-type(2) li:nth-child(5):hover img:nth-child(4) {
+    z-index: -1;
+}
+
+main section:nth-of-type(2) li:nth-child(6) img:nth-child(4) {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
+
+main section:nth-of-type(2) li:nth-child(6):hover img:nth-child(4) {
+    z-index: -1;
+}
+
+main section:nth-of-type(2) li:nth-child(7) img:nth-child(4) {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
+
+main section:nth-of-type(2) li:nth-child(7):hover img:nth-child(4) {
+    z-index: -1;
+}
+
+main section:nth-of-type(2) li:last-of-type img:last-of-type {
+    position: absolute;
+    top: 0;
+    order: 1;
+    top: 4em;
+}
+
+main section:nth-of-type(2) li:last-of-type:hover img:last-of-type {
+    z-index: -1;
+}
+
+section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+/* https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20grid.pdf */
+
+section:nth-of-type(2) li {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    position: relative;
+
+}
+
+section:nth-of-type(2) h2 {
+    font-family: fontBold;
+    font-weight: 400;
+    font-size: 1em;
+    display: flex;
+    order: 2;
+    margin: 2em;
+    cursor: pointer;
+}
 
 
- @media (width > 48em) {
-     main section:nth-of-type(1) img {
-         width: 20em;
-         height: 25em;
-     }
+main section:nth-of-type(2) p:nth-of-type(1) {
+    font-family: fontBold;
+    font-weight: 900;
+    font-size: 100%;
+    display: flex;
+    order: 3;
+    justify-content: start;
+    position: relative;
+    left: 2em;
+}
 
- }
 
- @media (width < 48em) {
-     section:nth-of-type(1) ul {
-         grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+main section:nth-of-type(2) p:nth-of-type(2) {
+    font-size: 1em;
+    font-family: fontBold;
+    z-index: 1;
+    position: absolute;
+    top: 4.3em;
+    left: .5em;
+    text-transform: uppercase;
+    border-style: solid;
+    width: 7em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-     }
- }
+
+main section:nth-of-type(2) li button {
+    margin: 1em;
+    padding: .5em;
+    width: 22em;
+    transform: translateY(31em);
+    background-color: var(--color-text);
+    color: var(--color-wittekst);
+    font-family: fontBold;
+    text-transform: uppercase;
+}
+
+@media (width > 48em) {
+    main section:nth-of-type(2) img {
+        width: 20em;
+        height: 25em;
+    }
+}
+
+@media (width < 48em) {
+    section:nth-of-type(2) ul {
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+        margin: 1em;
+
+    }
+
+    h2 {
+        display: none;
+
+    }
+
+    h3 {
+        display: none;
+
+    }
+
+    h4 button {
+        display: inline-block;
+        background-color: var(--color-background);
+		border-color: black;
+		position: fixed;
+		font-size: 1.5em;
+		display: flex;
+		justify-content: center;
+		width: 5em;
+		height: 2em;
+		top: 28em;
+		left: 9em;
+		z-index: 3;
+		align-items: center;
+        font-family: fontBold;
+        text-transform: uppercase;
+
+    }
+
+    main section:nth-of-type(2) li:nth-of-type(1) img:nth-of-type(2),
+    main section:nth-of-type(2) li:nth-of-type(2) img:nth-of-type(1),
+    main section:nth-of-type(2) li:nth-of-type(3) img:nth-of-type(2),
+    main section:nth-of-type(2) li:nth-of-type(4) img:nth-of-type(2),
+    main section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(2) {
+        display: flex;
+        margin-top: 3em;
+
+    }
+
+    main section:nth-of-type(2) li:nth-of-type(6) img:nth-of-type(2),
+    main section:nth-of-type(2) li:nth-of-type(7) img:nth-of-type(2),
+    main section:nth-of-type(2) li:nth-of-type(8) img:nth-of-type(1) {
+        display: flex;
+        margin-top: 4em;
+    }
+
+    main section li button {
+        display: none;
+    }
+}

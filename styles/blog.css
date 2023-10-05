@@ -1,74 +1,112 @@
-h1 {
+main h2 button {
 	display: flex;
 	justify-content: center;
-
 	margin: 2em;
-
-}
-
-h1 button {
 	padding: .5em .7em .5em 1em;
 	font-family: fontBold;
 	text-transform: uppercase;
-	font-size: 100%;
+	font-size: 1em;
+	position: relative;
+	left: 26em;
 
 }
 
-h1 button:focus {
-	border-color: var(--color-hover);
+main section section li {
+	font-family: fontBold;
+	font-size: 1.2em;
+	position: relative;
+	left: 1em;
+	top: 1em;
+	text-transform: uppercase;
 }
 
-
-h1 button img {
-	width: 1em;
-	height: 1em;
-}
-
-
-li {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-
-}
-
-li img {
-	width: 100%;
-	height: 17em;
+main section section ul {
+	width: 27em;
+	height: 11em;
 	display: flex;
-	margin-bottom: 3em;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: solid black;
+	position: absolute;
+	left: 34em;
+	background-color: var(--color-lookOpen);
+	z-index: 20;
+	transform: translateY(100%);
+	top: 22%;
+}
 
+main section section.open ul {
+	display: none;
 
 }
 
-li h2 {
+main li {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+
+}
+
+main li img {
+	width: 21em;
+	height: 15em;
+	display: flex;
+	order: -1;
+	margin: 1em;
+
+}
+
+main li h2 {
 	font-weight: 900;
-	font-family: fontNormaal;
+	font-size: 1.2em;
+	font-family: fontBold;
 	text-transform: uppercase;
 	margin: 2%;
-	display: flex;
 	color: var(--color-donkerGrijs);
-
-
-
+	display: flex;
+	order: 1;
+	position: relative;
+	left: .5em;
+	bottom: .5em;
 }
 
-ul {
+
+main ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-	column-gap: 2em;
+	column-gap: 1em;
 	grid-gap: 1em;
-
+	margin-bottom: 5em;
 }
 
+/* https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20grid.pdf */
 
 
-@keyframes pijl {
-	0% {
-		rotate: 0deg;
+@media ((width < 48em)) {
+	main li img {
+		display: flex;
+		justify-content: center;
 	}
 
-	100% {
-		rotate: 180deg;
+	main h2 button {
+		background-color: var(--color-background);
+		border-color: black;
+		position: fixed;
+		font-size: 1em;
+		display: flex;
+		justify-content: center;
+		width: 7em;
+		height: 2em;
+		top: 25.5em;
+		left: 5em;
+		z-index: 3;
+		align-items: center;
 	}
+
+
+	main h2 img {
+		display: none;
+	}
+
+
 }

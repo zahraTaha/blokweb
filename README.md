@@ -56,10 +56,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-
-Bij de iconen krijg je niet gelijk te weten wat ze zijn je moet dan paar keer doorklikken wat erg onhandig is. Als je bij de aankooppagina bent
-en je gaat door de foto's heen zegt die telkens de naam van het shirt erbij. Als die de prijs noemt gaat die niet goed verder naar de maten dit is erg onhandig. Bij de woorden in de navigatie zegt hij het soms spellend wat best onduidelijk is.
+Lijst met je bevindingen die in de test naar voren kwamen:
+Bij de iconen krijg je niet gelijk te weten wat ze zijn je moet dan paar keer doorklikken wat erg onhandig is.
+Sommige images hebben geen alt. Er worden erg weinig headings gebruikt. De foto's in de blog zijn niet duidelijk dat je erop kan klikken.
+Bij de woorden in de navigatie zegt hij het soms spellend wat best onduidelijk is.
+Bij de blog omdat de woorden door elkaar zitten leest de screenreader het ook niet helemaal goed op een rijtje wat erg verwarrend is als je niet kan zien.  
 </details>
 
 
@@ -180,10 +181,11 @@ student 2:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+- als je iets niet wil zien maar wel in screenreader gebruik left tot je niet meer ziet
+- voor heading kan je ook aria-label en img gebruiken
+- flex-wrap gebruiken om naar andere kant te sturen als te lang
+- 
+
 
 </details>
 
@@ -200,7 +202,8 @@ student 2:
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 Alt teksten kunnen wat specifieker zijn dan ik nu heb, zodat gebruikers die het nodig hebben het beter kunnen gebruiken.
-De screenreader leest de site best goed. 
+De blog pagina word nu op een rijtje gelezen. Je ziet nu ook dat je erop kan klikken. Sommige headings ben ik nog vergeten bij te doen.
+Verder leest de screenreader de site best goed. 
 
 </details>
 
@@ -214,7 +217,7 @@ De screenreader leest de site best goed.
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Iconen willen niet uit elkaar (zijn gestapeld)
 
 
   ### Agenda voor meeting
@@ -238,14 +241,14 @@ student 2:
 - Header iconen willen niet uit elkaar,
 - Hoe hover ik over img dat er dan een andere komt
 
+student 3:
+- Ik heb nog: hoe krijg je lijnen tussen de li, hoe krij ik dat de header tevoorschijn komt zodra ik naar boven scrol
+
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- gebruik z-index om dingen over elkaar te laten gaan
+- niet alles hoeft lijn eronder als het al duidelijk is
+- niet per img postition fixed doen 
+- met z-index werken als over hover dan naar boven komt
 
 </details>
 
@@ -263,15 +266,19 @@ student 2:
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+ Ik heb geleerd hoe ik een site responsive moet maken en hoe ik een hamburgermenu kan maken die animeert.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="./readme-images/menuNormaal.png" width="375px" alt="top">
+    <img src="./readme-images/menuVergroot.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat eerst erg moeilijk ging was een dropdown maken met js erbij ik benoemde steeds de verkeerde dingen
+  Waar ik erg veel tijd in moest steken is de header die met de pagina mee gaat het lukte telkens niet om ze 
+  goed te positioneren en ook als de site groter of kleiner word ging erg moeilijk en ben daar nogsteeds met het resultaat niet heel blij mee.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="./readme-images/lookbookMoeilijk.png" width="375px" alt="bummer">
+   <img src="./readme-images/headerMoeilijk.png" width="375px" alt="bummer">
 </details>
 
 
@@ -287,8 +294,16 @@ student 2:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://codepen.io/shooft/pen/qBLxdzP?editors=1010
+  2. https://codepen.io/shooft/pen/qBLxdym?editors=1100
+  3. https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20grid.pdf
+  4. https://codepen.io/shooft/pen/vYvELNv
+  5. https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20flexbox.pdf
+  6. https://codepen.io/shooft/pen/ZEVYKLM
+  7. https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20positioneren.pdf
+  8. https://codepen.io/shooft/pen/GRPgMGW
+  9. https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20animeren.pdf
+  10. https://codepen.io/shooft/live/NWePYRO
+  11. https://www.w3schools.com/cssref/pr_class_cursor.php
 
 </details>

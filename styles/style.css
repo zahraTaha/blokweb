@@ -1,18 +1,7 @@
 @font-face {
-	font-family: fontNormaal;
-	src: url("../Fonts/Helvetica_Neue_Black.woff2");
-}
-
-@font-face {
-	font-family: fontRoman;
-	src: url("../Fonts/Helvetica_Neue_Roman.woff2");
-
-}
-
-@font-face {
 	font-family: fontBold;
-	src: url("../Fonts/Helvetica_Neue_Bold.woff2");
-	font-weight: bold;
+	src: url("../Fonts/Helvetica_Neue_Bold.woff2") format('woff2');
+
 }
 
 
@@ -37,7 +26,7 @@
 :root {
 	/* startje */
 	--color-text: #111;
-	--color-background: #eee;
+	--color-background: white;
 	--color-wittekst: white;
 	--color-donkerGrijs: #3A3A3A;
 	--color-headerTekst: grey;
@@ -46,23 +35,28 @@
 	--color-focus: #FFFACD;
 	--color-active: red;
 	--color-focusFooter: #2e8540;
+	--color-pBack: #0F0F0F;
+	--color-buttonHover: #A9A9A9;
+	--color-focusButton: #C0C0C0;
+	--color-lookOpen: #DCDCDC;
 
 }
-
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
 a {
 	color: var(--color-donkerGrijs);
+	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {
 	color: var(--color-hover);
+
 }
 
 main a:focus,
@@ -82,14 +76,28 @@ footer a:active {
 	color: var(--color-active);
 }
 
-/* h1 button:focus { */
-/* background-color: var(--color-focus); */
-/* } */
+button {
+	cursor: pointer;
+}
+
+/* https://www.w3schools.com/cssref/pr_class_cursor.php */
 
 
-header p {
+main button:focus,
+footer button:focus {
+	background-color: var(--color-focusButton);
+}
+
+main button:active,
+footer button:focus {
+	background-color: var(--color-active);
+}
+
+
+/* bovenste lijn */
+header p:nth-child(2) {
 	background-color: var(--color-donkerGrijs);
-	height: 4em;
+	height: 3em;
 	color: var(--color-wittekst);
 	display: flex;
 	justify-content: center;
@@ -100,17 +108,52 @@ header p {
 	font-family: fontBold;
 }
 
+header section:first-of-type h1 {
+	position: relative;
+	left: -99999em;
+	position: fixed;
+}
 
+/* hamburgermenu */
 header nav:nth-of-type(1)>a {
-	z-index: 100;
+	z-index: 9999;
 }
 
 header>button {
-	z-index: 100;
+	z-index: 999;
 	margin: 1em;
-
+	position: relative;
+	background: none;
+	border: none;
+	position: fixed;
+	padding: 1em;
+	top: 5em;
 }
 
+span {
+	display: flex;
+	width: 2.5em;
+	height: .2em;
+	margin-bottom: .5em;
+	background: var(--color-text);
+	border-radius: 3px;
+	transform: scaleX(-1);
+	transition: .2s;
+}
+
+header button:hover span:nth-of-type(1) {
+	width: 120%;
+}
+
+header button:hover span:nth-of-type(2) {
+	width: 120%;
+}
+
+header button:hover span:nth-of-type(3) {
+	width: 120%;
+}
+
+/* https://codepen.io/shooft/live/NWePYRO */
 
 header nav:nth-of-type(1) {
 	position: fixed;
@@ -120,93 +163,114 @@ header nav:nth-of-type(1) {
 	top: 0;
 	bottom: 0;
 	padding-top: 5em;
+	z-index: 3;
+	overflow-y: auto;
 
 }
 
 header nav:nth-of-type(1) li {
-	font-family: fontRoman;
+	font-family: fontBold;
 	text-transform: uppercase;
 	font-weight: 800;
 	top: 4em;
-
+	margin: 1.5em;
+	font-size: 1.2em;
+	list-style-type: none;
 }
 
 header nav:nth-of-type(1) ul {
 	margin: 3em;
-
 }
-
-
 
 header nav.open {
 	transform: translateX(0%);
-
 }
 
-
-header section:nth-of-type(1) img:nth-child(1) {
-	width: 5em;
-	height: 4em;
+/* iconen */
+header section:nth-child(2) h2 {
+	position: relative;
+	left: -9999em;
 	position: fixed;
-	top: 5em;
-
 }
 
-header section:nth-of-type(1) img:nth-child(2) {
-	width: 1em;
-	height: 1em;
-	position: fixed;
-	top: 5em;
-
+header section:nth-child(2) li:nth-of-type(1) p:nth-of-type(1) {
+	position: relative;
+	left: 14.5em;
+	font-family: fontBold;
+	font-weight: 200;
+	top: 1.3em;
 }
 
-header section:nth-of-type(1) img:nth-child(3) {
-	width: 1em;
-	height: 1em;
-	position: fixed;
-	top: 5em;
-}
-
-header section:nth-of-type(1) img:nth-child(4) {
-	width: 1em;
-	height: 1em;
-	position: fixed;
-	top: 5em;
-}
-
-header section:nth-of-type(1) li {
+header section:nth-child(2) li:nth-of-type(1) img {
+	width: 2em;
+	height: 1.5em;
+	left: 12em;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	position: relative;
+}
+
+
+
+header section:nth-child(2) li:nth-of-type(2) img {
+	width: 8em;
+	height: 6em;
+	left: 38em;
+	display: flex;
+	position: relative;
 
 }
 
-header section:nth-of-type(1) ul {
+
+header section:nth-child(2) li:nth-of-type(3) img {
+	width: 2em;
+	height: 2em;
+	left: 62em;
+	display: flex;
+	position: relative;
+
+}
+
+header section:nth-child(2) li:nth-of-type(4) img {
+	width: 2em;
+	height: 2em;
+	left: 62em;
+	display: flex;
+	position: relative;
+
+}
+
+header section:nth-child(2) li:nth-of-type(5) img {
+	width: 2em;
+	height: 2em;
+	left: 62em;
+	display: flex;
+	position: relative;
+}
+
+header section:nth-child(2) li {
+	margin: 1em;
+
+}
+
+header section:nth-child(2) ul {
+	list-style: none;
 	display: flex;
 	flex-direction: row;
-	left: 0;
-	right: 0;
 	align-items: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
+	position: fixed;
+	z-index: 900;
 }
 
-
-
-
+/* slider nav */
+/* https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20flexbox.pdf */
 header nav:nth-of-type(2) ul {
 	display: flex;
 	gap: 3em;
 	overflow-x: auto;
 	margin-left: 2em;
-	margin-top: 5em;
+	margin-top: 10em;
 
 }
-
-/* header nav:nth-of-type(2) li a { */
-/* color: var(--color-donkerGrijs); */
-/* } */
 
 header nav:nth-of-type(2) li {
 	display: flex;
@@ -218,8 +282,6 @@ header nav:nth-of-type(2) li {
 
 }
 
-
-
 footer {
 	background-color: var(--color-footer);
 
@@ -228,22 +290,26 @@ footer {
 
 footer section h2 {
 	color: var(--color-wittekst);
-	font-family: fontNormaal;
+	font-family: fontBold;
 	margin: 0;
 }
 
 footer section p {
 	color: var(--color-wittekst);
-	position: absolute;
-	left: -9999em;
+	left: 0;
 	padding: .7em 1em 1em 3em;
-	font-family: fontRoman;
+	font-family: fontBold;
 	position: static;
-	font-size: 170%;
+	font-size: 150%;
 	margin-top: -2em;
 }
 
+footer a {
+	position: relative;
+	top: 2em;
+	text-transform: uppercase;
 
+}
 
 footer h2 img {
 	display: flex;
@@ -258,17 +324,19 @@ footer nav {
 
 }
 
-
 footer section {
 	grid-row-start: 1;
 	grid-row-end: 3;
+	background-color: var(--color-pBack);
 }
+
+/* https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20grid.pdf */
 
 
 footer li {
 	text-transform: uppercase;
 	font-family: fontBold;
-	padding: .7em 1em 1em 3em;
+	padding: .7em .2em 1.5em 3em;
 
 }
 
@@ -280,6 +348,7 @@ label {
 	color: var(--color-wittekst);
 	font-family: fontBold;
 	font-size: 2em;
+
 }
 
 footer form {
@@ -300,33 +369,217 @@ footer button {
 	flex-wrap: nowrap;
 }
 
-footer a:hover {
+/* https://codepen.io/shooft/pen/qBLxdym?editors=1100 */
+
+footer a:hover,
+footer a p:hover {
 	color: var(--color-hover);
 }
 
 
-@media ((width > 48em)) {
-	footer {
-		display: grid;
-		grid-template-columns: 40% 60%;
+@media ((max-width: 45em)) {
+
+	header section:nth-child(2) li:nth-of-type(1) p:nth-of-type(1) {
+		left: 9.5em;
+		top: 2em;
 	}
 
-	header section img {
-		height: 5em;
-		width: 7em;
+	header section:nth-child(2) li:nth-of-type(1) img {
+		left: 7em;
+		top: .5em;
 	}
+
+	header section:nth-child(2) li:nth-of-type(2) img {
+		width: 5em;
+		height: 4em;
+		left: 12em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(3) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 17em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(4) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 16em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(5) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 15em;
+		top: 1em;
+	}
+
+}
+
+@media ((max-width: 40em)) {}
+
+
+
+@media ((max-width: 40em)) {
+
+	header section:nth-child(2) li:nth-of-type(1) p:nth-of-type(1) {
+		left: 8.5em;
+		top: 2em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(1) img {
+		left: 6em;
+		top: .5em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(2) img {
+		width: 5em;
+		height: 4em;
+		left: 9em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(3) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 11em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(4) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 10em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(5) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 9em;
+		top: 1em;
+	}
+}
+
+
+@media ((max-width: 47.75em)) {
+
+	header section:nth-child(2) li:nth-of-type(1) p:nth-of-type(1) {
+		left: 9.5em;
+		top: 2em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(1) img {
+		left: 7em;
+		top: .5em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(2) img {
+		width: 5em;
+		height: 4em;
+		left: 15em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(3) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 24em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(4) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 23em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(5) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 22em;
+		top: 1em;
+	}
+
+
+
+}
+
+
+@media ((max-width: 28em)) {
+	header section:nth-child(2) li:nth-of-type(1) p:nth-of-type(1) {
+		left: 7em;
+		top: 2em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(1) img {
+		left: 7em;
+		top: .5em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(2) img {
+		width: 5em;
+		height: 4em;
+		left: 7em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(3) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 8em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(4) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 7em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(5) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 6em;
+		top: 1em;
+	}
+
+
+}
+
+
+@media ((width > 48em)) {
 
 	header nav:nth-of-type(2) li {
 		margin-left: 2em;
 	}
 
-	footer section p {
-		left: 0;
-	}
 
 	header nav:nth-of-type(2) ul {
 		gap: 1em;
 		justify-content: center;
+	}
+
+	footer {
+		display: grid;
+		grid-template-columns: 50% 50%;
 	}
 
 	footer nav ul {
@@ -335,6 +588,62 @@ footer a:hover {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+	}
+
+}
+
+@media ((width < 25em)) {
+
+	header section:nth-child(2) li:nth-of-type(1) p:nth-of-type(1) {
+		left: 6.6em;
+		top: 2em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(1) img {
+		left: 4em;
+		top: .5em;
+	}
+
+	header section:nth-child(2) li:nth-of-type(2) img {
+		width: 5em;
+		height: 4em;
+		left: 4.5em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(3) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 3em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(4) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 2em;
+		top: 1em;
+
+	}
+
+	header section:nth-child(2) li:nth-of-type(5) img {
+		width: 1.5em;
+		height: 1.5em;
+		left: 1em;
+		top: 1em;
+	}
+
+	footer section p {
+		left: -9999em;
+		position: absolute;
+	}
+
+	footer section {
+		background-color: var(--color-footer);
+		top: 3em;
+		position: relative;
 	}
 
 }
