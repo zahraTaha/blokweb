@@ -3,7 +3,12 @@ h1 {
     left: -9000em;
 }
 
-main section:first-of-type h2 button {
+main section:first-of-type h2 {
+    position: relative;
+    left: -9000em;
+}
+
+main section:first-of-type h3 button {
     display: flex;
     justify-content: center;
     font-family: fontBold;
@@ -14,7 +19,7 @@ main section:first-of-type h2 button {
     right: 3em;
 }
 
-main section:first-of-type h2 img {
+main section:first-of-type h3 img {
     width: 1em;
     height: 1em;
     position: relative;
@@ -22,14 +27,14 @@ main section:first-of-type h2 img {
     top: .1em;
 }
 
-main section:first-of-type h3 img {
+main section:first-of-type h4 img {
     width: 1em;
     height: 1em;
     position: relative;
     z-index: 100;
 }
 
-main section:first-of-type h3 button {
+main section:first-of-type h4 button {
     display: flex;
     justify-content: center;
     font-family: fontBold;
@@ -38,11 +43,11 @@ main section:first-of-type h3 button {
     height: 1.5em;
     align-items: center;
     position: relative;
-    top: 1.6em;
+    top: 1.4em;
 
 }
 
-h4 button {
+h5 button {
     display: none;
 }
 
@@ -155,6 +160,7 @@ section:nth-of-type(2) ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
 }
+
 /* https://dlo.mijnhva.nl/content/enforced/536487-FDMCI-2000FED121-DMCI-CMD-2324/FED%2023-24%20-%20Blok%201%20-%20Oefening%20grid.pdf */
 
 section:nth-of-type(2) li {
@@ -230,30 +236,30 @@ main section:nth-of-type(2) li button {
 
     }
 
-    h2 {
-        display: none;
-
-    }
-
     h3 {
         display: none;
 
     }
 
-    h4 button {
+    h4 {
+        display: none;
+
+    }
+
+    h5 button {
         display: inline-block;
         background-color: var(--color-background);
-		border-color: black;
-		position: fixed;
-		font-size: 1.5em;
-		display: flex;
-		justify-content: center;
-		width: 5em;
-		height: 2em;
-		top: 28em;
-		left: 9em;
-		z-index: 3;
-		align-items: center;
+        border-color: black;
+        position: fixed;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        width: 5em;
+        height: 2em;
+        top: 33em;
+        left: 10em;
+        z-index: 3;
+        align-items: center;
         font-family: fontBold;
         text-transform: uppercase;
 

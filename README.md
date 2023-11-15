@@ -262,8 +262,8 @@ student 3:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="./readme-images/pagina1.png" width="375px" alt="uitomst opdracht 1">
-  <img src="./readme-images/pagina2vol.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/1ePagina.png" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/2ePagina.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -276,10 +276,11 @@ student 3:
   ### Dit was lastig/Is niet gelukt:
   Wat eerst erg moeilijk ging was een dropdown maken met js erbij ik benoemde steeds de verkeerde dingen
   Waar ik erg veel tijd in moest steken is de header die met de pagina mee gaat het lukte telkens niet om ze 
-  goed te positioneren en ook als de site groter of kleiner word ging erg moeilijk en ben daar nogsteeds met het resultaat niet heel blij mee.
+  goed te positioneren, dit is nu wel goed gelukt. Het uitklappen van de Lookbook ging ook even moeilijk om hem op de pagina te laten komen
+  dit was gelukt doordat ik het via javascript naar css specifieker moet "oproepen".
 
-  <img src="./readme-images/lookbookMoeilijk.png" width="375px" alt="bummer">
-  <img src="./readme-images/headerMoeilijk.png" width="375px" alt="bummer">
+  <img src="./readme-images/lookbook.png" width="375px" alt="bummer">
+  <img src="./readme-images/header.png" width="375px" alt="bummer">
 </details>
 
 

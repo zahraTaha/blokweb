@@ -1,53 +1,64 @@
-main h2 button {
+main section:nth-of-type(1) h3 button {
+	position: relative;
+	font-family: fontBold;
+	font-size: 1em;
+	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
-	margin: 2em;
-	padding: .5em .7em .5em 1em;
-	font-family: fontBold;
-	text-transform: uppercase;
-	font-size: 1em;
-	position: relative;
-	left: 26em;
-
+	padding: 0.5em;
 }
 
-main section section li {
-	font-family: fontBold;
-	font-size: 1.2em;
-	position: relative;
-	left: 1em;
-	top: 1em;
-	text-transform: uppercase;
-}
 
-main section section ul {
-	width: 27em;
-	height: 11em;
+main section:nth-of-type(1) {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	border: solid black;
+	justify-content: center;
+	margin: 1em;
+	position: relative;
+}
+
+main section:nth-of-type(1) ul {
+	list-style: none;
+	grid-template-columns: 1fr 1fr;
+	display: grid;
 	position: absolute;
-	left: 34em;
-	background-color: var(--color-lookOpen);
-	z-index: 20;
-	transform: translateY(100%);
-	top: 22%;
-}
-
-main section section.open ul {
-	display: none;
+	background: var(--color-background);
+	top: 100%;
+	font-family: fontBold;
+	border-color: var(--color-border);
+	border-style: solid;
+	transform: translateX(-300%);
 
 }
 
-main li {
+
+main section:nth-of-type(1) ul li {
+	width: 15em;
+
+}
+
+main section:nth-of-type(1) ul li a {
+	padding: 0.3em 1em;
+	display: block;
+	font-family: fontBold;
+	text-transform: uppercase;
+}
+
+main section:nth-of-type(1) ul.show {
+	transform: translateX(0);
+}
+
+/* https://codepen.io/KaoriYes/pen/abPQVrx */
+
+
+
+main section:nth-child(2) li {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
 
 }
 
-main li img {
+main section:nth-child(2) li img {
 	width: 21em;
 	height: 15em;
 	display: flex;
@@ -56,7 +67,7 @@ main li img {
 
 }
 
-main li h2 {
+main section:nth-child(2) li h4 {
 	font-weight: 900;
 	font-size: 1.2em;
 	font-family: fontBold;
@@ -71,7 +82,7 @@ main li h2 {
 }
 
 
-main ul {
+main section:nth-child(2) ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 	column-gap: 1em;
@@ -83,30 +94,23 @@ main ul {
 
 
 @media ((width < 48em)) {
-	main li img {
+	main section:nth-child(2) li img {
 		display: flex;
 		justify-content: center;
 	}
 
-	main h2 button {
-		background-color: var(--color-background);
-		border-color: black;
-		position: fixed;
-		font-size: 1em;
-		display: flex;
-		justify-content: center;
-		width: 7em;
-		height: 2em;
-		top: 25.5em;
-		left: 5em;
-		z-index: 3;
-		align-items: center;
-	}
 
 
-	main h2 img {
+	main section:nth-child(2) h4 img {
 		display: none;
 	}
 
+
+	main section:nth-of-type(1) h3 button {
+		position: fixed;
+		left: 11em;
+		top: 35em;
+
+	}
 
 }
