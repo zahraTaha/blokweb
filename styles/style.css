@@ -202,27 +202,31 @@ header nav:nth-child(2) h2 {
 select {
 	position: relative;
 	left: 4em;
+	z-index: 700;
 }
 
 header nav:nth-child(2) img:nth-child(1) {
 	width: 6em;
 	height: 5em;
-	
+	z-index: 999;
 }
 
 header nav:nth-child(2) li:nth-of-type(1) img {
 	width: 2em;
 	height: 2em;
+	z-index: 999;
 }
 
 header nav:nth-child(2) li:nth-of-type(2) img {
 	width: 2em;
 	height: 2em;
+	z-index: 999;
 }
 
 header nav:nth-child(2) li:nth-of-type(3) img {
 	width: 2em;
 	height: 2em;
+	z-index: 999;
 }
 
 header nav:nth-child(2) {
@@ -234,7 +238,7 @@ header nav:nth-child(2) {
 	gap: .5em;
 	align-items: center;
 	padding: 1em;
-	z-index: 999;
+
 }
 
 header nav:nth-child(2)>a {

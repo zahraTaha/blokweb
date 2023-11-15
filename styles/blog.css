@@ -6,6 +6,7 @@ main section:nth-of-type(1) h3 button {
 	display: flex;
 	justify-content: center;
 	padding: 0.5em;
+	z-index: -1;
 }
 
 
