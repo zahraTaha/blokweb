@@ -24,14 +24,18 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
+
+	--bg-dark:black;
+
+	
 	/* startje */
 	--color-text: #111;
 	--color-background: white;
 	--color-wittekst: white;
 	--color-donkerGrijs: #3A3A3A;
 	--color-headerTekst: grey;
-	--color-footer: black;
-	--color-border: black;
+	--color-footer: var(--bg-dark);
+	--color-border: var(--bg-dark);
 	--color-hover: blue;
 	--color-focus: #FFFACD;
 	--color-active: red;

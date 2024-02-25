@@ -256,8 +256,8 @@ main section:nth-of-type(2) li button {
         justify-content: center;
         width: 5em;
         height: 2em;
-        top: 33em;
-        left: 10em;
+        top: 28em;
+        left: 12em;
         z-index: 3;
         align-items: center;
         font-family: fontBold;
